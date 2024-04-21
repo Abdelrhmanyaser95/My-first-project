@@ -1,0 +1,376 @@
+
+/* start variables  */
+:root{
+    --main-color:#10cab7;
+}
+/* end variables  */
+
+/* start global rules  */
+*{
+  max-width: 1100px;
+ 
+}
+
+
+/* end global rules  */
+ 
+  /* start header  */
+.header{
+    background-color: white;
+    height: 40px;
+}
+.container{
+    background-color: white;
+    width: 900px;
+    margin: auto;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo{
+    width: 60px;
+}
+
+
+.header .links ul{
+    position: absolute;
+    right: 0;
+    background-color: rgb(204, 226, 226);
+    width: 400px;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+
+}
+.header .links a{
+    text-decoration: none;
+    transition: 0.3s;
+    display: block;
+    margin-bottom: 5px;
+}
+.header .links a:hover{
+    padding-left: 5px;
+}
+.header .links ul li:not(:last-child){
+    border-bottom: 2px solid black;
+}
+.header .links:hover ul{
+    display: block;
+}
+/* End header  */
+
+/* start landing  */
+.landing{
+    background-image: url(../images/grayscale-photo-of-mountains.jpg);
+    background-size: cover;
+    height: calc(100vh - 50px);
+    margin-top:10px;
+    width: 1100px;
+   
+}
+
+@media (max-width:1000px){
+    .landing{
+        width: 1000px;
+    }
+}
+.landing .intro_text{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    
+}
+@media (max-width:844px){
+    .landing .intro_text{
+        position: absolute;
+        top: 52%;
+        left: 120%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+ h1{
+   text-align: center;
+   color:var(--main-color);
+   font-size: 50px;
+   font-weight: bold;
+}
+/* ENd landing  */
+
+/* start features  */
+.features{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: aliceblue;
+    margin-top: 50px;
+  
+}
+
+
+   
+.features .container{
+display: grid;
+grid-template-columns: repeat( auto-fill, minmax(200px, 1fr)); 
+grid-gap: 50px; 
+
+}
+.features .container .feat i{
+    position: relative;
+    right: -25%;
+    font-size: 50px;
+    color: var(--main-color);
+  
+}
+.features .container .feat h3{
+    font-weight: bold;
+}
+.features .container .feat p{
+    color: rgba(80, 77, 72, 0.582);
+}
+
+
+/* End features  */
+/* start services  */
+.services{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 150px;
+}
+ .services .container {
+  font-size:20px ;
+  display: flex;
+  justify-content: center;
+  left: 16px;
+}
+.services .container h2{
+    position: relative;
+    left: 21px;
+    font-size: 100px;
+    color: #F6F6F6;
+}
+.services .container p{
+    position: relative;
+    top:32px;
+    right:160px;
+    color: #2C4755;
+}
+.services .services_content {
+  
+    display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 40px;
+  margin-top: 100px;
+  padding-left: 50px;
+  position: relative;
+  left: 16px;
+  width: 1000px;
+}
+.services .services_content i{
+    color: var(--main-color);
+    font-size: 30px;
+}
+.services .services_content h3 {
+    margin: -25px -11px 19px 57px
+}
+.services .services_content p{
+    margin: 0 0 61px 58px;
+    line-height: 20px;
+}
+.services .services_content .image-col{
+    width: 250px;
+    position: relative;
+    text-align: center;
+}
+.services .services_content .image-col::before{
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 420px;;
+    background-color: rgb(182, 167, 167);
+    z-index: -1;
+    top: -50px;
+    right: -49px;
+}
+
+
+/* End services  */
+/* start portfolio  */
+.portfolio{
+    margin-top: 100px;
+}
+.portfolio .content .image img{
+    width: 150px;
+}
+.portfolio .portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 40px;
+    padding-left: 188px;
+}
+.portfolio .container h2{
+    position: relative;
+    left: 304px;
+    font-size: 100px;
+    color: #F6F6F6;
+    padding-bottom: 184px;
+}
+.portfolio .container p{
+    position: relative;
+    top:-60px;
+    right:386px;
+    color: #2C4755;
+}
+.portfolio .portfolio-content{
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    position: relative;
+    left: -103px;
+}
+
+/* end portfolio  */
+/* start about  */
+.about{
+    margin-top: 400px;
+    margin-bottom: 306px;
+    position: relative;
+    right: 52px;
+}
+.about .about-content{
+position: relative;
+left: 378px;
+bottom: 250px;
+}
+
+.about .image{
+   position: relative;
+    right: 189px;
+    width: 250px;
+}
+.about .about-content h2{
+    font-size: 50px;
+    font-size: 100px;
+    color: #F6F6F6;
+}
+.about .about-content p{
+    position: relative;
+    left: 98px;
+    bottom: 122px;
+}
+.about .text hr{
+    width: 50%;
+    position: relative;
+    left: -116px;
+    border: 1px solid var(--main-color);
+  
+}
+.about .container .image::before{
+    content: "";
+    position: absolute;
+    background-color: #ebeced;
+    width: 100px;
+    height: calc(100% + 80px);
+    top: -40px;
+    left: -20px;
+    z-index: -1;
+    
+}
+.about .container .image::after{
+    top: -40px;
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 223px;
+    border-left: 80px solid var(--main-color);
+    border-bottom: 80px solid var(--main-color);
+    z-index: -1;
+    right: -150px;
+
+}
+.about .text .par{
+    font-weight: bold;
+    line-height: 2;
+}
+.about .text .paragraph-two{
+    color: #777;
+    line-height: 2;
+}
+/* end about  */
+/* start contact */
+.contact{
+    margin-top: 300px;
+}
+.contact .contact-content{
+    position: relative;
+left: 378px;
+bottom: 250px;
+
+}
+.contact .contact-content h2{
+    font-size: 50px;
+    font-size: 100px;
+    color: #F6F6F6;
+}
+.contact .contact-content p{
+    position: relative;
+    left: 98px;
+    bottom: 122px;
+}
+.contact .info{
+    position: relative;
+    right: 440px;
+    
+}
+.contact .info h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.contact .info a{
+    text-decoration: none;
+    color: var(--main-color);
+    text-align: center;
+    position: relative;
+    left: 30px;
+    font-size: 29px;
+}
+.contact .info .icon{
+    position: relative;
+    left: 183px;
+    top: -34px;
+    letter-spacing: 10px;
+}
+/* End contact */
+/* start footer  */
+
+.footer{
+
+}
+.footer .text{
+  text-align: center;
+  position: relative;
+  top: 241px;
+  color: white;
+  background-color: #777;
+  font-weight: bold;
+}
+.footer span{
+    color: var(--main-color);
+    font-weight: bold;
+    height: 70px;
+}
+
+/* End footer  */
+
+
+
+
+
+
+
